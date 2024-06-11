@@ -8,10 +8,13 @@ function Form({ setGroup }) {
 
   const submitHandler = (e) => {
     e.preventDefault();
+    const currentDate = new Date();
     setGroup({
       name,
       description,
+      date: currentDate,
     });
+    console.log(e);
     setName("");
     setDescription("");
   };

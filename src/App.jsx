@@ -6,7 +6,6 @@ import GroupList from "./components/GroupList.jsx";
 
 function App() {
   const [group, setgroup] = useState({});
-
   return (
     <>
       <Header />
