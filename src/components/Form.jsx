@@ -4,6 +4,8 @@ function Form({ setGroup }) {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
 
+  // Handles form submission, updates the group state, and resets the form fields
+
   const submitHandler = (e) => {
     e.preventDefault();
     setGroup({
@@ -13,9 +15,13 @@ function Form({ setGroup }) {
     setName("");
     setDescription("");
   };
+
+  // Updates the 'name' state based on the input field's current value
   const inputChange = (e) => {
     setName(e.target.value);
   };
+
+  // Updates the 'description' state based on the textarea's current value
   const textareaChange = (e) => {
     setDescription(e.target.value);
   };

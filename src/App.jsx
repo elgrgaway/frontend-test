@@ -3,13 +3,10 @@ import "./App.css";
 import Form from "./components/Form.jsx";
 import Header from "./components/Header.jsx";
 import GroupList from "./components/GroupList.jsx";
-// import ToDoList from "./components/ToDoList.jsx";
 
 function App() {
   const [group, setgroup] = useState({});
-  const logGroup = () => {
-    console.log(group);
-  };
+
   return (
     <>
       <Header />
